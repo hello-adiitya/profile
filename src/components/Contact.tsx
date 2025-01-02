@@ -135,6 +135,13 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-6 text-primary text-center">
                 Contact Information
               </h3>
+              <div className="mb-4 relative w-48 h-48 mx-auto overflow-hidden rounded-full border-2 border-white shadow-xl">
+                <img 
+                  src="/profile.jpg"
+                  alt="Aditya Gupta"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
               <div className="space-y-6">
                 <div className="flex items-center justify-center group">
