@@ -30,8 +30,8 @@ const Contact = () => {
           Get in Touch
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto ">
-          {/* <div className="section-3d p-8 flex items-center justify-center h-screen">
+        {/* <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto ">
+          <div className="section-3d p-8">
             <h3 className="text-xl font-semibold mb-6 text-primary">Contact Information</h3>
             
             <div className="space-y-6">
@@ -55,11 +55,82 @@ const Contact = () => {
                 <MapPin className="text-secondary group-hover:text-primary mr-3 transition-colors" size={20} />
                 <span className="text-dark">Sector-51, Noida, India</span>
               </div>
+              
             </div>
-          </div> */}
-          {/* <div className="section-3d p-8 flex items-center justify-center h-screen"> */}
+          </div>
+
+          <div className="section-3d p-8">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-dark mb-2">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="input-3d"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-dark mb-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="input-3d"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-dark mb-2">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="input-3d"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-dark mb-2">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={4}
+                  className="input-3d"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" className="btn-3d w-full">
+                Contact Me
+              </button>
+            </form>
+          </div>
+        </div> */}
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Contact Information Section */}
           <div className="section-3d p-8 flex items-center justify-center h-full bg-white rounded-lg shadow-md">
-          
             <div>
               <h3 className="text-xl font-semibold mb-6 text-primary text-center">
                 Contact Information
@@ -103,6 +174,7 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* Contact Form Section */}
           <div className="section-3d p-8 flex items-center justify-center h-full bg-white rounded-lg shadow-md">
             <form onSubmit={handleSubmit} className="space-y-6 w-full">
               <div>
