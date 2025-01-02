@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,10 +10,40 @@ const Contact = () => {
     message: "",
   });
 
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:adityagupta2253@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}%0D%0A%0D%0APhone: ${formData.phone}`;
+
+    // Replace with your EmailJS credentials
+    const serviceID = "service_eixwsmc";
+    const templateID = "template_maviiwl";
+    const publicKey = "l-LNLQ8AnmQf9580E";
+
+    emailjs
+      .send(serviceID, templateID, formData, publicKey)
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Your message has been sent!");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          alert("Failed to send the message. Please try again.");
+        }
+      );
   };
+
+
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   window.location.href = `mailto:adityagupta2253@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}%0D%0A%0D%0APhone: ${formData.phone}`;
+  // };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
