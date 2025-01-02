@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-neutral;
+}
+
+@layer components {
+  .btn-3d {
+    @apply relative px-6 py-3 bg-primary text-white rounded-lg shadow-3d 
+           transform active:translate-y-1 active:shadow-3d-hover
+           transition-all duration-150 hover:brightness-110;
+  }
+
+  .btn-3d-secondary {
+    @apply relative px-6 py-3 bg-secondary text-white rounded-lg shadow-3d 
+           transform active:translate-y-1 active:shadow-3d-hover
+           transition-all duration-150 hover:brightness-110;
+  }
+
+  .section-3d {
+    @apply relative bg-white rounded-xl shadow-lg transform 
+           hover:translate-y-[-5px] transition-all duration-300
+           hover:shadow-xl;
+  }
+
+  .input-3d {
+    @apply w-full px-4 py-3 rounded-lg border-2 border-dark
+           focus:outline-none focus:border-primary
+           transform transition-all duration-200
+           focus:translate-y-[-2px] focus:shadow-lg;
+  }
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+}
