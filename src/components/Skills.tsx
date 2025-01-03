@@ -1,7 +1,7 @@
 import React from 'react';
 import { Code, Database, Palette } from 'lucide-react';
 
-const SkillCategory = ({ icon: Icon, title, skills }: { icon: any, title: string, skills: string[] }) => (
+const SkillCategory = ({ icon: Icon, title, skills, skillLinks }: { icon: any, title: string, skills: string[], skillLinks: Record<string, string> }) => (
   <div className="section-3d p-8 hover:border-2 hover:border-primary transition-all duration-300">
     <div className="flex items-center mb-6">
       <Icon className="text-primary mr-3" size={24} />
@@ -13,7 +13,7 @@ const SkillCategory = ({ icon: Icon, title, skills }: { icon: any, title: string
           key={skill} 
           className="px-4 py-2 bg-neutral rounded-full text-dark hover:bg-primary hover:text-white
                    transform hover:translate-y-[-2px] transition-all duration-200 cursor-pointer"
-                   onClick={() => window.open(skillLinks[skill], '_blank')} // Open link in a new tab
+          onClick={() => window.open(skillLinks[skill], '_blank')} // Open link in a new tab
         >
           {skill}
         </span>
@@ -24,9 +24,9 @@ const SkillCategory = ({ icon: Icon, title, skills }: { icon: any, title: string
 
 const Skills = () => {
   const skills = {
-    development: ['HTML','CSS','Core Java', 'JavaScript','React.js', 'Node.js', 'Nest.js', 'TypeScript',],
+    development: ['HTML', 'CSS', 'Core Java', 'JavaScript', 'React.js', 'Node.js', 'Nest.js', 'TypeScript'],
     database: ['MySQL', 'MongoDB', 'SQL', 'Data Structures'],
-    tools: ['Git', 'Github','VPS','Netlify','Adv. AI Tools','Adobe Photoshop','EXCEL',]
+    tools: ['Git', 'Github', 'VPS', 'Netlify', 'Adv. AI Tools', 'Adobe Photoshop', 'EXCEL'],
   };
 
   const skillLinks = {
@@ -53,7 +53,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-25 bg-white">
-      <div className="container mx-auto px-6">  
+      <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12">
           <span className="text-gradient">Skills & Expertise</span>
         </h2>
