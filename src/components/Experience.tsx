@@ -14,12 +14,13 @@ const Experience = () => {
               <h3 className="text-xl font-semibold">Database Executive</h3>
             </div>
             <p className="text-gray-600 mb-2">Justdial Limited | Noida, India</p>
-            <p className="text-gray-500 mb-4">06/2024 - Present</p>
+            <p className="text-gray-500 mb-4 ">June-2024 - Present</p>
+            <p className="text-gray-600 mb-1 text-sm">Justdial Limited is an India-based local search service provider.</p>
             <ul className="space-y-2 text-gray-600">
-              <li>• Crafting efficient MySQL queries for data extraction and manipulation</li>
-              <li>• Automating processes and performing advanced analytics using Python</li>
-              <li>• Creating compelling visualizations for complex datasets</li>
-              <li>• Conducting regular audits for data quality and compliance</li>
+              <li>• Crafting efficient MySQL queries for data extraction and manipulation.</li>
+              <li>• Creating compelling visualizations to translate complex datasets into actionable insights.</li>
+              <li>• Conducted regular audits to ensure data quality and compliance with regulations.</li>
+              <li>• Regularly updated documentation related to processes, standards, and procedures.</li>
               <li>• Managing data input and recordkeeping systems</li>
             </ul>
           </div>
@@ -31,13 +32,13 @@ const Experience = () => {
                 <h3 className="text-xl font-semibold">Key Achievements</h3>
               </div>
               <ul className="space-y-4">
-                <li className="flex items-start">
+              <li className="flex items-start">
                   <div className="bg-blue-100 rounded-full p-2 mr-3">
                     <span className="text-blue-600 font-semibold">30%</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold">Enhanced Data Processing</h4>
-                    <p className="text-gray-600">Increased data processing speed through MySQL query optimization</p>
+                    <h4 className="font-semibold">Enhanced Problem Visualization</h4>
+                    <p className="text-gray-600">Improved problem visualization through effective analysis and design, resulting in more accurate and scalable software solutions.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -45,28 +46,29 @@ const Experience = () => {
                     <span className="text-blue-600 font-semibold">40%</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold">Script Automation Success</h4>
-                    <p className="text-gray-600">Developed five automated Python scripts, reducing manual tasks</p>
+                    <h4 className="font-semibold">Database Optimization Success</h4>
+                    <p className="text-gray-600">Reduced query execution time by 40% using optimized database indexing.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-blue-100 rounded-full p-2 mr-3">
-                    <span className="text-blue-600 font-semibold">25%</span>
+                    <span className="text-blue-600 font-semibold">60%</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold">Data Visualization Expert</h4>
-                    <p className="text-gray-600">Created over 20 data visualizations, improving decision-making accuracy</p>
+                    <h4 className="font-semibold">Efficiency and Adaptability</h4>
+                    <p className="text-gray-600">Skilled in leveraging new tools and AI technologies to enhance accuracy and reduce project timelines.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-blue-100 rounded-full p-2 mr-3">
-                    <span className="text-blue-600 font-semibold">30%</span>
+                    <span className="text-blue-600 font-semibold">70%</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold">Continuous Self-Improvement</h4>
-                    <p className="text-gray-600">Consistently enhancing skills through daily learning, experience, and feedback.</p>
+                    <h4 className="font-semibold">15+ Projects Independently</h4>
+                    <p className="text-gray-600">Successfully completed 15 projects independently, enhancing personal growth and satisfaction while meeting deadlines effectively.</p>
                   </div>
                 </li>
+                
               </ul>
             </div>
           </div>

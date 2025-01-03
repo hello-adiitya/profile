@@ -23,9 +23,9 @@ const SkillCategory = ({ icon: Icon, title, skills }: { icon: any, title: string
 
 const Skills = () => {
   const skills = {
-    development: ['Java', 'JavaScript', 'TypeScript', 'React.js', 'Node.js', 'Nest.js', 'HTML', 'CSS'],
+    development: ['HTML','CSS','Core Java', 'JavaScript','React.js', 'Node.js', 'Nest.js', 'TypeScript',],
     database: ['MySQL', 'MongoDB', 'SQL', 'Data Structures'],
-    tools: ['Git', 'Github', 'Adobe Photoshop', 'Power BI', 'EXCEL']
+    tools: ['Git', 'Github','VPS','Netlify','Adv. AI Tools','Adobe Photoshop','EXCEL',]
   };
 
   return (

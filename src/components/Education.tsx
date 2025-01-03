@@ -5,21 +5,27 @@ const Education = () => {
   const education = [
     {
       degree: "Master of Computer Applications",
-      institution: "Arunachal University of Studies",
-      period: "2020 - 2025",
+      institution: "Arunachal University of Studies(AU)",
+      period: "July-2023 - June-2025",
       location: "India"
     },
     {
-      degree: "Bachelor's degree",
+      degree: "Bachelor's degree(BCA)",
       institution: "Makhan Lal Chaturvedi National University",
-      period: "2018 - 2023",
+      period: "July-2020 -June-2023",
       location: "Bhopal, India"
     },
     {
       degree: "Intermediate",
       institution: "Yug Nirman Senior Secondary School",
-      period: "2018 - 2020",
-      location: "India"
+      period: "2019 - 2020",
+      location: "Deoria, India"
+    },
+    {
+      degree: "High School",
+      institution: "Yug Nirman Senior Secondary School",
+      period: "2017 - 2018",
+      location: "Deoria, India"
     }
   ];
 
