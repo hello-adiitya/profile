@@ -29,7 +29,7 @@ const Hero = () => {
             <p className="text-gray-600 mb-8 leading-relaxed text-center md:text-left">
               Hi, I'm Aditya Gupta, a dedicated professional transitioning from
               database management to software development with expertise in
-              Java, JavaScript, React.js, Node.js and TypeScript. I specialize
+              <b> Java, JavaScript, React.js, Node.js and TypeScript</b>. I specialize
               in full-stack development, and I have a comprehensive approach to
               building user-centric applications, ensuring efficiency and
               scalability in software solutions.
@@ -50,7 +50,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="md:w-1/2 mt-12 md:mt-10">
+          <div className="md:w-1/2 mt-10 md:mt-20">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur-lg opacity-30"></div>
               <div className="relative bg-white p-8 rounded-2xl shadow-xl">
