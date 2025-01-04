@@ -8,6 +8,8 @@ export default {
         secondary: '#596235',  // Olive green
         neutral: '#CDCBD6',    // Light gray
         dark: '#2F3020',       // Dark olive
+        white: '#FFFFFF',
+        midnight: '#121063',
       },
       boxShadow: {
         '3d': '0 4px 0 0 #2F3020',
@@ -17,3 +19,4 @@ export default {
   },
   plugins: [],
 };
+

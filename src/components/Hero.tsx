@@ -50,7 +50,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="md:w-1/2 mt-12 md:mt-20">
+          <div className="md:w-1/2 mt-12 md:mt-10">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur-lg opacity-30"></div>
               <div className="relative bg-white p-8 rounded-2xl shadow-xl">
@@ -74,6 +74,94 @@ const Hero = () => {
                     <div>
                       <h4 className="font-semibold">Live-Projects</h4>
                       <p className="text-gray-600">Completed</p>
+                    </div>
+                  </div>
+                  <div className="mt-6">
+                    <h4 className="font-semibold mb-4 text-white bg-midnight rounded-full px-4 py-2 inline-block">
+                      Live-Projects
+                    </h4>
+
+                    <div className="flex flex-wrap gap-4 justify-center">
+                      <a
+                        href="https://helloadiitya.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                      >
+                        Portfolio
+                      </a>
+                      <a
+                        href="https://justsay.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                      >
+                        JustSay
+                      </a>
+                      {/* <a
+                        href="https://project3.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-red-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                      >
+                        Project 3
+                      </a>
+                      <a
+                        href="https://project4.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                      >
+                        Project 4
+                      </a>
+                      <a
+                        href="https://project5.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                      >
+                        Project 5
+                      </a>
+                      <a
+                        href="https://project5.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                      >
+                        Project 5
+                      </a>
+                      <a
+                        href="https://project5.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                      >
+                        Project 5
+                      </a>
+                      <a
+                        href="https://project5.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                      >
+                        Project 5
+                      </a>
+                      <a
+                        href="https://project5.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                      >
+                        Project 5
+                      </a>
+                      <a
+                        href="https://project5.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                      >
+                        Project 5
+                      </a> */}
                     </div>
                   </div>
                 </div>
