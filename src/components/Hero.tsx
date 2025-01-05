@@ -8,7 +8,7 @@ const Hero = () => {
       className="pt-24 min-h-screen flex items-center hero-bg relative overflow-hidden"
     >
       {/* bg-gradient-to-br from-purple-50 via-pink-50 to-white */}
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 md:pr-12">
             <div className="relative mb-8">

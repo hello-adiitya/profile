@@ -84,36 +84,36 @@ const Contact = () => {
       className="py-20 pt-5 hero-bg relative overflow-hidden"
     >
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gradient mb-12">
+        <h2 className="text-3xl sm:text-2xl font-bold text-center text-gradient mb-12">
           Get in Touch
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-8 max-w-4xl mx-auto">
           {/* Contact Information Section */}
-          <div className="section-3d p-8 flex items-center justify-center h-full bg-white rounded-lg shadow-md">
-            <div>
-              <h3 className="text-xl font-semibold mb-6 text-primary text-center">
+          <div className="section-3d p-6 sm:p-4 bg-white rounded-lg shadow-md">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-6 text-primary">
                 Contact Information
               </h3>
-              <div className="mb-4 relative w-48 h-48 mx-auto overflow-hidden rounded-full border-2 border-white shadow-xl">
+              <div className="mb-4 relative w-32 h-32 sm:w-24 sm:h-24 mx-auto overflow-hidden rounded-full border-2 border-white shadow-xl">
                 <img
                   src="/profile.jpg"
                   alt="Aditya Gupta"
-                  className="w-full h-full object-cover font-semibold"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="space-y-6">
-                <div className="flex items-center justify-center group rounded-lg shadow-lg p-6 flex items-start shadow-xl">
-                  <Mail className="text-secondary mr-3" size={20} />
+              <div className="space-y-4">
+                <div className="flex items-center justify-center space-x-3">
+                  <Mail className="text-secondary" size={20} />
                   <a
                     href="mailto:adityagupta2253@gmail.com"
-                    className="text-dark hover:text-primary transition-colors font-semibold"
+                    className="text-dark hover:text-primary font-semibold transition-colors"
                   >
                     adityagupta2253@gmail.com
                   </a>
                 </div>
-                <div className="flex items-center justify-center group rounded-lg shadow-lg p-6 flex items-start shadow-xl">
-                  <Phone className="text-secondary mr-3" size={20} />
+                <div className="flex items-center justify-center space-x-3">
+                  <Phone className="text-secondary" size={20} />
                   <a
                     href="tel:08299547156"
                     className="text-dark font-semibold hover:text-primary transition-colors"
@@ -121,9 +121,9 @@ const Contact = () => {
                     +91 8299547156
                   </a>
                 </div>
-                <div className="flex items-center justify-center group rounded-lg shadow-lg p-6 flex items-start shadow-xl">
-                  <MapPin className="text-secondary mr-3" size={20} />
-                  <span className="text-dark font-semibold">
+                <div className="flex items-center justify-center space-x-3">
+                  <MapPin className="text-secondary" size={20} />
+                  <span className="text-dark font-semibold text-center">
                     Sector-51, Noida, India
                   </span>
                 </div>
@@ -132,8 +132,8 @@ const Contact = () => {
           </div>
 
           {/* Contact Form Section */}
-          <div className="section-3d p-8 flex items-center justify-center h-full bg-white rounded-lg shadow-md">
-            <form onSubmit={handleSubmit} className="space-y-6 w-full">
+          <div className="section-3d p-6 sm:p-4 bg-white rounded-lg shadow-md">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label
                   htmlFor="name"
@@ -232,6 +232,5 @@ const Contact = () => {
     </section>
   );
 };
-
 
 export default Contact;
