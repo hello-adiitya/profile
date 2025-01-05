@@ -50,15 +50,18 @@ const Skills = () => {
     'Adobe Photoshop': 'https://www.adobe.com/products/photoshop.html',
     EXCEL: 'https://www.w3schools.com/excel/index.php',
   };
+  
+
+
 
   return (
-    <section id="skills" className="py-25 bg-white">
+    <section id="skills" className="py-25 hero-bg">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12">
           <span className="text-gradient">Skills & Expertise</span>
         </h2>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 ">
           <SkillCategory icon={Code} title="Development" skills={skills.development} skillLinks={skillLinks} />
           <SkillCategory icon={Database} title="Database" skills={skills.database} skillLinks={skillLinks} />
           <SkillCategory icon={Palette} title="Tools" skills={skills.tools} skillLinks={skillLinks} />

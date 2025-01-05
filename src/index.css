@@ -6,36 +6,63 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  @apply bg-neutral;
+  @apply bg-neutral dark:bg-dark transition-all duration-300;
+}
+
+.dark body {
+  background-size: 30px 30px;
+  background-image: radial-gradient(circle, rgba(100, 181, 246, 0.07) 1px, transparent 1px);
 }
 
 @layer components {
   .btn-3d {
     @apply relative px-6 py-3 bg-primary text-white rounded-lg shadow-3d 
            transform active:translate-y-1 active:shadow-3d-hover
-           transition-all duration-150 hover:brightness-110;
+           transition-all duration-300 hover:brightness-110
+           dark:shadow-glow dark:hover:shadow-glow-strong dark:bg-primary/90;
   }
 
   .btn-3d-secondary {
     @apply relative px-6 py-3 bg-secondary text-white rounded-lg shadow-3d 
            transform active:translate-y-1 active:shadow-3d-hover
-           transition-all duration-150 hover:brightness-110;
+           transition-all duration-300 hover:brightness-110
+           dark:shadow-glow dark:hover:shadow-glow-strong dark:bg-secondary/90;
   }
 
   .section-3d {
     @apply relative bg-white rounded-xl shadow-lg transform 
            hover:translate-y-[-5px] transition-all duration-300
-           hover:shadow-xl;
+           hover:shadow-xl dark:bg-dark-lighter dark:text-neutral
+           dark:border dark:border-dark-accent/30 dark:backdrop-blur-sm;
   }
-  
+
   .input-3d {
     @apply w-full px-4 py-3 rounded-lg border-2 border-dark
            focus:outline-none focus:border-primary
            transform transition-all duration-200
-           focus:translate-y-[-2px] focus:shadow-lg;
+           focus:translate-y-[-2px] focus:shadow-lg
+           dark:bg-dark-lighter dark:border-dark-accent
+           dark:text-neutral dark:focus:border-primary
+           dark:focus:shadow-glow;
   }
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary
+         dark:from-primary dark:to-secondary dark:animate-gradient;
+}
+
+.dark .hero-bg {
+  @apply bg-gradient-radial from-dark-lighter via-dark to-dark
+         before:absolute before:inset-0
+         before:bg-gradient-dots before:opacity-10
+         before:animate-float;
+}
+
+/* Animated background elements */
+.dark .bg-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(100, 181, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(100, 181, 246, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
 }

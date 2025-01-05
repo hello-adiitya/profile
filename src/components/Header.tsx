@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
-import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { Menu, X, Github, Instagram, Linkedin, Mail } from "lucide-react";
+import ThemeToggle from './ui/ThemeToggle';
+import { Theme, toggleTheme, applyTheme } from '@/utils/theme';
+
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,20 +18,25 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleThemeToggle = () => {
+    const newTheme = toggleTheme(theme);
+    setTheme(newTheme);
+    applyTheme(newTheme);
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-neutral/80 backdrop-blur-lg shadow-lg"
-          : "bg-transparent"
+          ? 'bg-neutral/80 backdrop-blur-lg shadow-lg dark:bg-dark/80' : 'bg-transparent'
       }`}
     >
       <nav className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
-        <div className="flex items-center justify-between space-x-6 bg-navyblue rounded-full py-1 px-4 text-white">
+        <div className="flex items-center justify-between space-x-6 bg-neutral rounded-full py-1 px-4 text-white hero-bg relative overflow-hidden">
           <a
             href="#"
-            className="text-2xl font-bold text-primary bg-midnighthover:text-secondary transition-colors"
+            className="text-2xl font-bold text-gradient hover:text-secondary transition-colors"
           >
             @aditya
           </a>
@@ -70,19 +79,20 @@ const Header = () => {
                   key={item}
                   href={`#${item.toLowerCase()}`}
                   className="text-dark hover:text-primary font-medium transition-all duration-200 
-                         hover:transform hover:translate-y-[-2px]"
+                         hover:transform hover:translate-y-[-2px] dark:text-neutral dark:hover:text-primary"
                 >
                   {item}
                 </a>
               )
             )}
+            <ThemeToggle theme={theme} onToggle={handleThemeToggle} />
             <a href="#contact" className="btn-3d">
               Hire Me
             </a>
           </div>
 
           <button
-            className="md:hidden text-dark hover:text-primary transition-colors"
+            className="md:hidden text-dark hover:text-primary transition-colors dark:text-neutral"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -90,14 +100,14 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg p-4">
+          <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg p-4 dark:bg-dark">
             <div className="flex flex-col space-y-4">
               {["Home", "Experience", "Skills", "Education", "Contact"].map(
                 (item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
-                    className="text-dark hover:text-primary font-medium transition-colors"
+                    className="text-dark hover:text-primary font-medium transition-colors dark:text-neutral"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item}
