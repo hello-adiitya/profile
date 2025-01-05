@@ -90,8 +90,8 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8 max-w-4xl mx-auto">
           {/* Contact Information Section */}
-          <div className="section-3d p-6 sm:p-4 bg-white rounded-lg shadow-md">
-            <div className="text-center">
+          <div className="section-3d p-6 flex justify-center items-center sm:p-4 bg-white rounded-lg shadow-md">
+            <div className="text-center ">
               <h3 className="text-xl font-semibold mb-6 text-primary">
                 Contact Information
               </h3>
