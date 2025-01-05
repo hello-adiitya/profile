@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${
         isScrolled
           ? 'bg-neutral/80 backdrop-blur-lg shadow-lg dark:bg-dark/80' : 'bg-transparent'
       }`}
@@ -46,7 +46,7 @@ const Header = () => {
               href="https://www.linkedin.com/in/hello-adiitya"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-400 transition-colors"
+              className="hover:text-blue-400 transition-colors z-20"
             >
               <Linkedin size={24} />
             </a>
@@ -54,7 +54,7 @@ const Header = () => {
               href="https://github.com/hello-adiitya"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-400 transition-colors"
+              className="hover:text-blue-400 transition-colors z-20"
             >
               <Github size={24} />
             </a>

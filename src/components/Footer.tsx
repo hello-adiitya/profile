@@ -11,7 +11,7 @@ const Footer = () => {
             <p className="mt-2 text-gray-300">Software Developer & Database Executive</p>
           </div>
 
-          <div className="flex space-x-6 ">
+          <div className="flex space-x-6 z-10">
           <a
               href="https://www.linkedin.com/in/hello-adiitya"
               target="_blank"
