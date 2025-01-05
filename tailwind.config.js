@@ -10,6 +10,8 @@ export default {
         dark: '#2F3020',       // Dark olive
         white: '#FFFFFF',
         midnight: '#121063',
+        navyblue:'#000080',
+       
       },
       boxShadow: {
         '3d': '0 4px 0 0 #2F3020',
