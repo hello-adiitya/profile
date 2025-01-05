@@ -33,7 +33,7 @@ const Header = () => {
     >
       <nav className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
-        <div className="flex items-center justify-between space-x-6 bg-neutral rounded-full py-1 px-4 text-white hero-bg relative overflow-hidden">
+        <div className="flex items-center justify-between space-x-4 bg-neutral rounded-full py-1 px-1 text-white hero-bg relative overflow-hidden">
           <a
             href="#"
             className="text-2xl font-bold text-gradient hover:text-secondary transition-colors"
@@ -57,20 +57,21 @@ const Header = () => {
             >
               <Github size={24} />
             </a>
-            <a
-              href="https://www.instagram.com/hello_adiitya/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition-colors"
-            >
-              <Instagram size={24} />
-            </a>
-            <a
+            <ThemeToggle theme={theme} onToggle={handleThemeToggle} />
+              {/* <a
+                href="https://www.instagram.com/hello_adiitya/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition-colors"
+              >
+                <Instagram size={24} />
+              </a> */}
+            {/* <a
               href="mailto:adityagupta2253@gmail.com"
               className="hover:text-blue-400 transition-colors"
             >
               <Mail size={24} />
-            </a>
+            </a> */}
           </div>
           <div className="hidden md:flex items-center space-x-6">
             {["Home", "Experience", "Skills", "Education", "Contact"].map(
@@ -85,7 +86,7 @@ const Header = () => {
                 </a>
               )
             )}
-            <ThemeToggle theme={theme} onToggle={handleThemeToggle} />
+            
             <a href="#contact" className="btn-3d">
               Hire Me
             </a>
