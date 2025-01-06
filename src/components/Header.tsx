@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import ThemeToggle from './ui/ThemeToggle';
-import Contact from "./contact/ContactForm";
+// import Contact from "./contact/ContactForm";
 import { Theme, toggleTheme, applyTheme } from '@/utils/theme';
 
 
