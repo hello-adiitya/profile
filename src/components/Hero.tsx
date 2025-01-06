@@ -30,25 +30,25 @@ const Hero = () => {
             <p className="text-gray-600 mb-8 leading-relaxed text-center md:text-left dark:text-neutral/80">
               Hi, I'm Aditya Gupta, a dedicated professional transitioning from
               database management to software development with expertise in
-              <b> Java, JavaScript, React.js, Node.js and TypeScript</b>. I specialize
-              in full-stack development, and I have a comprehensive approach to
-              building user-centric applications, ensuring efficiency and
-              scalability in software solutions.
+              <b> Java, JavaScript, React.js, Node.js and TypeScript</b>. I
+              specialize in full-stack development, and I have a comprehensive
+              approach to building user-centric applications, ensuring
+              efficiency and scalability in software solutions.
             </p>
             <div className="flex justify-center md:justify-start space-x-4 relative z-10 ">
               <a
                 href="#contact"
-                className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center "
+                className="px-5 py-4 border-2 border-purple-600 text-purple-600 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center "
               >
                 Get in touch
                 <ArrowRight className="ml-2" size={20} />
               </a>
               <a
-                href="#experience"
-                className="px-8 py-4 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-primary/90 dark:hover:border-primary
-                         dark:hover:shadow-glow"
+                href="public\resume.pdf"
+                download="Aditya_Gupta_Resume.pdf"
+                className="px-5 py-4 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-gradient-to-r from-blue-500 to-green-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center"
               >
-                View Work
+                Download Resume
               </a>
             </div>
           </div>
@@ -65,8 +65,12 @@ const Hero = () => {
                       <span className="text-purple-600 font-bold">1+</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold dark:text-neutral">Years Experience</h4>
-                      <p className="text-gray-600 dark:text-neutral/70">In Software Development</p>
+                      <h4 className="font-semibold dark:text-neutral">
+                        Years Experience
+                      </h4>
+                      <p className="text-gray-600 dark:text-neutral/70">
+                        In Software Development
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -74,8 +78,12 @@ const Hero = () => {
                       <span className="text-pink-600 font-bold">5+</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold dark:text-neutral">Live-Projects</h4>
-                      <p className="text-gray-600 dark:text-neutral/70">Completed</p>
+                      <h4 className="font-semibold dark:text-neutral">
+                        Live-Projects
+                      </h4>
+                      <p className="text-gray-600 dark:text-neutral/70">
+                        Completed
+                      </p>
                     </div>
                   </div>
                   <div className="mt-6">

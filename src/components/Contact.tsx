@@ -95,24 +95,32 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-6 text-primary">
                 Contact Information
               </h3>
-              <div className="mb-4 relative w-32 h-32 sm:w-24 sm:h-24 mx-auto overflow-hidden rounded-full border-2 border-white shadow-xl">
+              {/* <div className="mb-4 relative w-32 h-32 sm:w-24 sm:h-24 mx-auto overflow-hidden rounded-full border-2 border-white shadow-xl">
+                <img
+                  src="/profile.jpg"
+                  alt="Aditya Gupta"
+                  className="w-full h-full object-cover"
+                />
+              </div> */}
+              <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl dark:border-primary/20 dark:shadow-glow">
                 <img
                   src="/profile.jpg"
                   alt="Aditya Gupta"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="space-y-4">
-                <div className="flex items-center justify-center space-x-3">
+              <div className="space-y-4 ">
+                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
                   <Mail className="text-secondary" size={20} />
                   <a
                     href="mailto:adityagupta2253@gmail.com"
-                    className="text-dark hover:text-primary font-semibold transition-colors"
+                    className="text-dark hover:text-primary font-semibold transition-colors "
+                    // bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30
                   >
                     adityagupta2253@gmail.com
                   </a>
                 </div>
-                <div className="flex items-center justify-center space-x-3">
+                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
                   <Phone className="text-secondary" size={20} />
                   <a
                     href="tel:08299547156"
@@ -121,7 +129,7 @@ const Contact = () => {
                     +91 8299547156
                   </a>
                 </div>
-                <div className="flex items-center justify-center space-x-3">
+                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
                   <MapPin className="text-secondary" size={20} />
                   <span className="text-dark font-semibold text-center">
                     Sector-51, Noida, India
@@ -222,7 +230,10 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-              <button type="submit" className="btn-3d w-full">
+              <button
+                type="submit"
+                className=" py-4 border-2 flex justify-center items-center border-midnight-300 text-purple-600 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center w-full"
+              >
                 Contact Me
               </button>
             </form>

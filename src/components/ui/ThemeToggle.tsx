@@ -11,7 +11,7 @@ const ThemeToggle = ({ theme, onToggle }: ThemeToggleProps) => {
   return (
     <button
       onClick={onToggle}
-      className="relative inline-flex h-10 w-16 items-center rounded-full bg-neutral/30 transition-colors
+      className="relative inline-flex h-10 w-16 items-center rounded-full bg-accent/40 transition-colors
                 hover:bg-primary/20 dark:bg-dark-lighter"
       aria-label="Toggle theme"
     >
