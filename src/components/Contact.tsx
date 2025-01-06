@@ -114,7 +114,7 @@ const Contact = () => {
                   <Mail className="text-secondary" size={20} />
                   <a
                     href="mailto:adityagupta2253@gmail.com"
-                    className="text-dark hover:text-primary font-semibold transition-colors "
+                    className="text-dark hover:text-primary font-semibold transition-colors dark:text-gray-500"
                     // bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30
                   >
                     adityagupta2253@gmail.com
@@ -124,14 +124,14 @@ const Contact = () => {
                   <Phone className="text-secondary" size={20} />
                   <a
                     href="tel:08299547156"
-                    className="text-dark font-semibold hover:text-primary transition-colors"
+                    className="text-dark font-semibold hover:text-primary transition-colors dark:text-gray-500"
                   >
                     +91 8299547156
                   </a>
                 </div>
                 <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
                   <MapPin className="text-secondary" size={20} />
-                  <span className="text-dark font-semibold text-center">
+                  <span className="text-dark font-semibold text-center dark:text-gray-500">
                     Sector-51, Noida, India
                   </span>
                 </div>
@@ -232,7 +232,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className=" py-4 border-2 flex justify-center items-center border-midnight-300 text-purple-600 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center w-full"
+                className=" py-4 border-2 flex justify-center items-center border-midnight-300 text-prmary-600 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center w-full"
               >
                 Contact Me
               </button>
