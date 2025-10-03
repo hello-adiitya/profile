@@ -24,9 +24,9 @@ const SkillCategory = ({ icon: Icon, title, skills, skillLinks }: { icon: any, t
 
 const Skills = () => {
   const skills = {
-    development: ['HTML', 'CSS',' Bootstrap', 'Tailwind CSS', 'Core Java', 'JavaScript (ES6+)', 'AngularJS', 'TypeScript','Figma (Wireframing, Prototyping)','Canva'],
+    development: ['HTML', 'CSS',' Bootstrap', 'Tailwind CSS', 'Core Java', 'JavaScript (ES6+)', 'AngularJS', 'TypeScript'],
     database: ['MySQL', 'MongoDB', 'SQL', 'Data Structures','Firebase','Cloudinary'],
-    tools: ['Git', 'Github', 'VPS Hosting', 'Netlify', 'Adv. AI Tools for Development', 'Adobe Photoshop', 'EXCEL'],
+    tools: ['Git', 'Github', 'VPS Hosting', 'Netlify', 'Adv. AI Tools for Development','Figma (Wireframing, Prototyping)','Canva', 'Adobe Photoshop'],
   };
 
   const skillLinks = {
