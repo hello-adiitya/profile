@@ -12,7 +12,7 @@ export default {
         accent: '#173A5E',
         white: '#FFFFFF',
         midnight: '#121063',
-        navyblue:'#8133c1ff',
+        navyblue:'#3edbe0ff',
         
         dark: {
           DEFAULT: '#0A1929',  // Deep blue-black
