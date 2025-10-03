@@ -131,7 +131,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
                   <MapPin className="text-secondary" size={20} />
-                  <span className="text-dark font-semibold text-center dark:text-gray-500">
+                  <span className="text-dark font-semibold text-center dark:text-gray-300">
                     Sector-51, Noida, India
                   </span>
                 </div>
