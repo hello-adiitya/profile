@@ -24,22 +24,23 @@ const SkillCategory = ({ icon: Icon, title, skills, skillLinks }: { icon: any, t
 
 const Skills = () => {
   const skills = {
-    development: ['HTML', 'CSS', 'Core Java', 'JavaScript', 'React.js', 'Node.js', 'Nest.js', 'TypeScript'],
-    database: ['MySQL', 'MongoDB', 'SQL', 'Data Structures'],
-    tools: ['Git', 'Github', 'VPS', 'Netlify', 'Adv. AI Tools', 'Adobe Photoshop', 'EXCEL'],
+    development: ['HTML', 'CSS',' Bootstrap', 'Tailwind CSS', 'Core Java', 'JavaScript (ES6+)', 'AngularJS', 'TypeScript','Figma (Wireframing, Prototyping)','Canva'],
+    database: ['MySQL', 'MongoDB', 'SQL', 'Data Structures','Firebase','Cloudinary'],
+    tools: ['Git', 'Github', 'VPS Hosting', 'Netlify', 'Adv. AI Tools for Development', 'Adobe Photoshop', 'EXCEL'],
   };
 
   const skillLinks = {
     HTML: 'https://www.w3schools.com/html/default.asp',
     CSS: 'https://www.w3schools.com/css/default.asp',
+    'Tailwind CSS' :'https://www.w3schools.com/w3css/defaulT.asp',
     'Core Java': 'https://www.w3schools.com/java/default.asp',
-    JavaScript: 'https://www.w3schools.com/js/default.asp',
-    'React.js': 'https://www.w3schools.com/react/default.asp',
-    'Node.js': 'https://www.w3schools.com/nodejs/default.asp',
-    'Nest.js': 'https://nestjs.com/',
+    JavaScript: 'https://www.w3schools.com/js/js_es6.asp',
+    AngularJS: 'https://www.w3schools.com/angular/',
     TypeScript: 'https://www.w3schools.com/typescript/index.php',
+    Figma: 'https://www.figma.com/community/design-tutorials/figma',
     MySQL: 'https://www.w3schools.com/mysql/default.asp',
     MongoDB: 'https://www.w3schools.com/mongodb/index.php',
+    Firebase: 'https://firebase.google.com/docs',
     SQL: 'https://www.w3schools.com/sql/default.asp',
     'Data Structures': 'https://www.w3schools.com/dsa/index.php',
     Git: 'https://www.w3schools.com/git/default.asp',

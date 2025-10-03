@@ -18,7 +18,9 @@ const Experience = () => {
             <p className="text-gray-600 mb-2 dark:text-neutral/90">
               <b>Justdial Limited | Noida, India </b>
             </p>
-            <p className="text-gray-500 mb-4 dark:text-neutral/90">June-2024 - Present</p>
+            <p className="text-gray-500 mb-4 dark:text-neutral/90">
+              June-2024 - Present
+            </p>
             <p className="text-gray-600 mb-1 text-sm dark:text-neutral/90">
               Justdial Limited is an India-based local search service provider.
             </p>
@@ -40,11 +42,14 @@ const Experience = () => {
                 standards, and procedures.
               </li>
               <li>• Managing data input and recordkeeping systems</li>
+              <li>
+                • Documented processes and standardized workflows to improve
+                team productivity.
+              </li>
             </ul>
           </div>
 
           <div className="space-y-6 ">
-            
             <div className="bg-white rounded-lg shadow-lg p-8 shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30 text-">
               <div className="flex items-center mb-4">
                 <Award className="text-blue-600 mr-3" size={24} />
@@ -109,7 +114,6 @@ const Experience = () => {
                     </p>
                   </div>
                 </li>
-                
               </ul>
             </div>
           </div>

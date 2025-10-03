@@ -25,15 +25,21 @@ const Hero = () => {
               Hi, I'm <span className="gradient-text">Aditya Gupta</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-500 font-semibold mb-6 text-center md:text-left ">
-              Software Developer & Database Executive
+              UI/UX & Front-end Developer
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed text-center md:text-left dark:text-neutral/80">
               Hi, I'm Aditya Gupta, a dedicated professional transitioning from
               database management to software development with expertise in
-              <b> Java, JavaScript, React.js, Node.js and TypeScript</b>. I
-              specialize in full-stack development, and I have a comprehensive
-              approach to building user-centric applications, ensuring
-              efficiency and scalability in software solutions.
+              <b>
+                {" "}
+                HTML5, CSS3, JavaScript (ES6+), TypeScript, AngularJS, Tailwind
+                CSS, and Bootstrap{" "}
+              </b>{" "}
+              with a strong foundation in Core Java and software development
+              principles with hands-on experience in designing and developing
+              modern, responsive, and user-centric web applications. I have
+              a comprehensive approach to building user-centric applications,
+              ensuring efficiency and scalability in software solutions.
             </p>
             <div className="flex justify-center md:justify-start space-x-4 relative z-10 ">
               <a
@@ -44,7 +50,7 @@ const Hero = () => {
                 <ArrowRight className="ml-2" size={20} />
               </a>
               <a
-                href="/Aditya Gupta UI_UX & Frontend Developer.pdf" 
+                href="/Aditya Gupta UI_UX & Frontend Developer.pdf"
                 download="Aditya Gupta UI_UX & Frontend Developer.pdf"
                 className="px-5 py-4 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-gradient-to-r from-blue-500 to-green-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center"
               >
