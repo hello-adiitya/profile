@@ -108,19 +108,19 @@ const Contact = () => {
               </div>
 
               <div className="space-y-4 mt-8">
-                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:hover:border-navyblue">
+                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
                   <Mail className="text-secondary" size={20} />
                   <a
                     href="mailto:adityagupta2253@gmail.com"
                     className="text-dark font-semibold transition-colors 
                  hover:text-primary 
-                 dark:text-gray-400 dark:hover:text-navyblue w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                 dark:text-gray-400 dark:hover:text-navyblue"
                   >
                     adityagupta2253@gmail.com
                   </a>
                 </div>
 
-                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:hover:border-primary-400">
+                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
                   <Phone className="text-secondary" size={20} />
                   <a
                     href="tel:08299547156"
@@ -132,7 +132,7 @@ const Contact = () => {
                   </a>
                 </div>
 
-                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:hover:border-primary-400">
+                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
                   <MapPin className="text-secondary" size={20} />
                   <span className="text-dark font-semibold text-center dark:text-gray-400 dark:hover:text-navyblue">
                     Sector-51, Noida, India
