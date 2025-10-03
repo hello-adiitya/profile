@@ -13,11 +13,13 @@ const Hero = () => {
           <div className="md:w-1/2 md:pr-12">
             <div className="relative mb-8">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur-lg opacity-30 dark:opacity-40"></div>
-              <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl dark:border-primary/20 dark:shadow-glow">
+              <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl 
+                transition-colors duration-300 group
+                dark:border-primary/20 dark:shadow-primary dark:hover:border-primary">
                 <img
                   src="/profile.webp"
                   alt="Aditya Gupta"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
             </div>
