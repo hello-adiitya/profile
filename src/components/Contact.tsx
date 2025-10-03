@@ -102,7 +102,7 @@ const Contact = () => {
                   className="w-full h-full object-cover"
                 />
               </div> */}
-              <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl dark:border-primary/20 dark:shadow-glow">
+              <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl dark:border-primary/20 dark:shadow-glow dark:hover:border-primary-400">
                 <img
                   src="/profile.webp"
                   alt="Aditya Gupta"
@@ -137,7 +137,7 @@ const Contact = () => {
                 </div>
               </div> */}
               <div className="space-y-4">
-                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
+                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:hover:border-primary-400">
                   <Mail className="text-secondary" size={20} />
                   <a
                     href="mailto:adityagupta2253@gmail.com"
@@ -149,7 +149,7 @@ const Contact = () => {
                   </a>
                 </div>
 
-                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
+                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:hover:border-primary-400">
                   <Phone className="text-secondary" size={20} />
                   <a
                     href="tel:08299547156"
@@ -161,9 +161,9 @@ const Contact = () => {
                   </a>
                 </div>
 
-                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
+                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:hover:border-primary-400">
                   <MapPin className="text-secondary" size={20} />
-                  <span className="text-dark font-semibold text-center dark:text-gray-400">
+                  <span className="text-dark font-semibold text-center dark:text-gray-400 dark:hover:text-navyblue">
                     Sector-51, Noida, India
                   </span>
                 </div>
