@@ -114,41 +114,14 @@ const Contact = () => {
                 />
               </div>
 
-              {/* <div className="space-y-4 ">
-                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
-                  <Mail className="text-secondary" size={20} />
-                  <a
-                    href="mailto:adityagupta2253@gmail.com"
-                    className="text-dark hover:text-primary font-semibold transition-colors dark:text-gray-400 hover:text-primary"
-                    // bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30
-                  >
-                    adityagupta2253@gmail.com
-                  </a>
-                </div>
-                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
-                  <Phone className="text-secondary" size={20} />
-                  <a
-                    href="tel:08299547156"
-                    className="text-dark font-semibold hover:text-primary transition-colors dark:text-gray-400"
-                  >
-                    +91 8299547156
-                  </a>
-                </div>
-                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
-                  <MapPin className="text-secondary" size={20} />
-                  <span className="text-dark font-semibold text-center dark:text-gray-400">
-                    Sector-51, Noida, India
-                  </span>
-                </div>
-              </div> */}
               <div className="space-y-4">
-                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:hover:border-primary-400">
+                <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:hover:border-navyblue">
                   <Mail className="text-secondary" size={20} />
                   <a
                     href="mailto:adityagupta2253@gmail.com"
                     className="text-dark font-semibold transition-colors 
                  hover:text-primary 
-                 dark:text-gray-400 dark:hover:text-navyblue"
+                 dark:text-gray-400 dark:hover:text-navyblue group-hover:scale-110"
                   >
                     adityagupta2253@gmail.com
                   </a>
