@@ -114,7 +114,7 @@ const Contact = () => {
                   <Mail className="text-secondary" size={20} />
                   <a
                     href="mailto:adityagupta2253@gmail.com"
-                    className="text-dark hover:text-primary font-semibold transition-colors dark:text-gray-500"
+                    className="text-dark hover:text-primary font-semibold transition-colors dark:text-gray-400"
                     // bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30
                   >
                     adityagupta2253@gmail.com
@@ -124,7 +124,7 @@ const Contact = () => {
                   <Phone className="text-secondary" size={20} />
                   <a
                     href="tel:08299547156"
-                    className="text-dark font-semibold hover:text-primary transition-colors dark:text-gray-500"
+                    className="text-dark font-semibold hover:text-primary transition-colors dark:text-gray-350"
                   >
                     +91 8299547156
                   </a>
