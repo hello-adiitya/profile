@@ -12,9 +12,11 @@ const Hero = () => {
           <div className="md:w-1/2 md:pr-12">
             <div className="relative mb-8">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur-lg opacity-30 dark:opacity-40"></div>
-              <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl 
+              <div
+                className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl 
                 transition-colors duration-300 group
-                dark:border-primary/20 dark:shadow-primary dark:hover:border-primary">
+                dark:border-primary/20 dark:shadow-primary dark:hover:border-primary"
+              >
                 <img
                   src="/profile.webp"
                   alt="Aditya Gupta"
@@ -33,18 +35,19 @@ const Hero = () => {
               database management to software development with expertise in
               <b>
                 {" "}
-                HTML5, CSS, Tailwind CSS, Bootstrap, Figma, JavaScript (ES6+), TypeScript, AngularJS and Core Java{" "}
+                HTML5, CSS, Tailwind CSS, Bootstrap, Figma, JavaScript (ES6+),
+                TypeScript, AngularJS and Core Java{" "}
               </b>{" "}
               with a strong foundation in Core Java and software development
               principles with hands-on experience in designing and developing
-              modern, responsive, and user-centric web applications. I have
-              a comprehensive approach to building user-centric applications,
+              modern, responsive, and user-centric web applications. I have a
+              comprehensive approach to building user-centric applications,
               ensuring efficiency and scalability in software solutions.
             </p>
             <div className="flex justify-center md:justify-start space-x-4 relative z-10 ">
               <a
                 href="#contact"
-                className="px-5 py-4 border-2 border-purple-600 text-purple-600 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center "
+                className="px-5 py-4 mb-5 border-2 border-purple-600 text-purple-600 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center "
               >
                 Get in touch
                 <ArrowRight className="ml-2" size={20} />
@@ -52,7 +55,7 @@ const Hero = () => {
               <a
                 href="/Aditya Gupta UI_UX & Frontend Developer.pdf"
                 download="Aditya Gupta UI_UX & Frontend Developer.pdf"
-                className="px-5 py-4 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-gradient-to-r from-blue-500 to-green-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center"
+                className="px-5 py-4 mb-5 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-gradient-to-r from-blue-500 to-green-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center"
               >
                 Download Resume
               </a>
@@ -97,89 +100,51 @@ const Hero = () => {
                       Live-Projects
                     </h4>
 
-                    <div className="flex flex-wrap gap-4 justify-center relative z-10">
+                    {/* Two columns for Portfolio and JustSay buttons */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center relative z-10">
+                      {/* Column 1: Portfolio */}
                       <a
                         href="https://helloadiitya.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                        className="px-4 py-2 bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 flex justify-center dark:shadow-primary"
                       >
                         Portfolio
                       </a>
+
+                      {/* Column 2: JustSay */}
                       <a
                         href="https://justsay.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+                        className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 flex justify-center dark:shadow-navyblue"
                       >
                         JustSay
                       </a>
+                    </div>
+
+                    {/* Tech Stack Section */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6  ">
+                      {/* Column 1: Portfolio Tech */}
+                      <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-4 shadow-md dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:shadow-primary shadow-navyblue">
+                        <h5 className="dark:text-gray-200 font-semibold mb-2">
+                          Tech Stack
+                        </h5>
+                        <p className="dark:text-gray-200 text-sm">
+                          TypeScript, Tailwind CSS, Vite, EmailJS, Lucide-React
+                        </p>
                       </div>
-                      <div>
-                      {/* <a
-                        href="https://project3.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-red-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
-                      >
-                        Project 3
-                      </a>
-                      <a
-                        href="https://project4.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
-                      >
-                        Project 4
-                      </a>
-                      <a
-                        href="https://project5.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
-                      >
-                        Project 5
-                      </a>
-                      <a
-                        href="https://project5.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
-                      >
-                        Project 5
-                      </a>
-                      <a
-                        href="https://project5.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
-                      >
-                        Project 5
-                      </a>
-                      <a
-                        href="https://project5.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
-                      >
-                        Project 5
-                      </a>
-                      <a
-                        href="https://project5.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
-                      >
-                        Project 5
-                      </a>
-                      <a
-                        href="https://project5.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
-                      >
-                        Project 5
-                      </a> */}
+
+                      {/* Column 2: JustSay Tech */}
+                      <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-4 shadow-md dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:shadow-navyblue shadow-primary">
+                        <h5 className="dark:text-gray-200 font-semibold mb-2">
+                          Tech Stack
+                        </h5>
+                        <p className="dark:text-gray-200 text-sm">
+                          React.js, TypeScript, Firebase, Cloudinary, Tailwind
+                          CSS, Vite
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
