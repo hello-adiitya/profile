@@ -95,18 +95,11 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-6 text-primary">
                 Contact Information
               </h3>
-              {/* <div className="mb-4 relative w-32 h-32 sm:w-24 sm:h-24 mx-auto overflow-hidden rounded-full border-2 border-white shadow-xl">
-                <img
-                  src="/profile.jpg"
-                  alt="Aditya Gupta"
-                  className="w-full h-full object-cover"
-                />
-              </div> */}
               <div
                 className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl 
-             transition-colors duration-300 group
-             dark:border-primary/20 dark:shadow-navyblue dark:hover:border-navyblue hover:border-primary"
-              >
+                  transition-colors duration-300 group
+                  dark:border-primary/20 dark:shadow-navyblue dark:hover:border-navyblue hover:border-primary"
+                >
                 <img
                   src="/profile.webp"
                   alt="Aditya Gupta"
@@ -114,7 +107,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 mt-8">
                 <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:hover:border-navyblue">
                   <Mail className="text-secondary" size={20} />
                   <a
