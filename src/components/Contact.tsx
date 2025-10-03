@@ -143,7 +143,7 @@ const Contact = () => {
                     href="mailto:adityagupta2253@gmail.com"
                     className="text-dark font-semibold transition-colors 
                  hover:text-primary 
-                 dark:text-gray-400 dark:hover:text-primary"
+                 dark:text-gray-400 dark:hover:text-navyblue"
                   >
                     adityagupta2253@gmail.com
                   </a>
@@ -155,7 +155,7 @@ const Contact = () => {
                     href="tel:08299547156"
                     className="text-dark font-semibold transition-colors 
                  hover:text-primary 
-                 dark:text-gray-400 dark:hover:text-primary"
+                 dark:text-gray-400 dark:hover:text-navyblue"
                   >
                     +91 8299547156
                   </a>
