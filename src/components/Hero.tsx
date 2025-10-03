@@ -15,7 +15,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur-lg opacity-30 dark:opacity-40"></div>
               <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl dark:border-primary/20 dark:shadow-glow">
                 <img
-                  src="/profile.jpg"
+                  src="/profile.webp"
                   alt="Aditya Gupta"
                   className="w-full h-full object-cover"
                 />
