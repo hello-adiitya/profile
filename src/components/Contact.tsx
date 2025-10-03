@@ -102,13 +102,15 @@ const Contact = () => {
                   className="w-full h-full object-cover"
                 />
               </div> */}
-              <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl dark:border-primary/20 dark:shadow-glow dark:hover:border-primary-400">
-                <img
-                  src="/profile.webp"
-                  alt="Aditya Gupta"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl 
+                dark:border-primary/20 dark:shadow-glow dark:hover:border-primary-400 group">
+  <img
+    src="/profile.webp"
+    alt="Aditya Gupta"
+    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+  />
+</div>
+
               {/* <div className="space-y-4 ">
                 <div className="flex items-center justify-center space-x-3 bg-white rounded-lg shadow-lg p-2 flex items-start shadow-xl dark:bg-dark-lighter dark:border dark:border-dark-accent/30">
                   <Mail className="text-secondary" size={20} />
