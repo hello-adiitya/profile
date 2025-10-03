@@ -32,8 +32,7 @@ const Hero = () => {
               database management to software development with expertise in
               <b>
                 {" "}
-                HTML5, CSS3, JavaScript (ES6+), TypeScript, AngularJS, Tailwind
-                CSS, and Bootstrap{" "}
+                HTML5, CSS, Tailwind CSS, Bootstrap, Figma, JavaScript (ES6+), TypeScript, AngularJS and Core Java{" "}
               </b>{" "}
               with a strong foundation in Core Java and software development
               principles with hands-on experience in designing and developing
