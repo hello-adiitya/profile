@@ -105,7 +105,7 @@ const Contact = () => {
               <div
                 className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl 
              transition-colors duration-300 group
-             dark:border-primary/20 dark:shadow-glow dark:hover:border-primary hover:border-primary"
+             dark:border-primary/20 dark:shadow-navyblue dark:hover:border-primary hover:border-accent"
               >
                 <img
                   src="/profile.webp"
