@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="flex justify-center md:justify-start space-x-4 relative z-10 ">
               <a
                 href="#contact"
-                className="px-5 py-4 mb-5 border-2 border-purple-600 text-purple-600 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center "
+                className="px-5 py-4 mb-5 border-2 border-purple-600 text-purple-600 shadow-glow hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center "
               >
                 Get in touch
                 <ArrowRight className="ml-2" size={20} />
@@ -55,7 +55,7 @@ const Hero = () => {
               <a
                 href="/Aditya Gupta UI_UX & Frontend Developer.pdf"
                 download="Aditya Gupta UI_UX & Frontend Developer.pdf"
-                className="px-5 py-4 mb-5 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-gradient-to-r from-blue-500 to-green-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center"
+                className="px-5 py-4 mb-5 border-2 border-purple-600 text-purple-600 rounded-full shadow-glow font-semibold hover:bg-gradient-to-r from-blue-500 to-green-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center"
               >
                 Download Resume
               </a>
@@ -98,12 +98,13 @@ const Hero = () => {
                   <div className="mt-6">
                     <h4 className="font-semibold mb-4 text-white bg-midnight rounded-full px-4 py-2 inline-block hero-bg dark:text-primary">
                       Live-Projects
-                    </h4>
+                    </h4>            
 
-                    {/* Two columns for Portfolio and JustSay buttons */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center relative z-10">
-                      {/* Column 1: Portfolio */}
-                      <a
+                    {/* Tech Stack Section */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 justify-center relative z-10 ">
+                      {/* Column 1: Portfolio Tech */}
+                      <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-3 pt-0 shadow-md dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:shadow-primary shadow-navyblue">
+                        <a
                         href="https://helloadiitya.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -111,23 +112,7 @@ const Hero = () => {
                       >
                         Portfolio
                       </a>
-
-                      {/* Column 2: JustSay */}
-                      <a
-                        href="https://justsay.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 flex justify-center dark:shadow-navyblue"
-                      >
-                        JustSay
-                      </a>
-                    </div>
-
-                    {/* Tech Stack Section */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6  ">
-                      {/* Column 1: Portfolio Tech */}
-                      <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-4 shadow-md dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:shadow-primary shadow-navyblue">
-                        <h5 className="dark:text-gray-200 font-semibold mb-2">
+                        <h5 className="dark:text-gray-200 font-semibold mt-2 mb-2">
                           Tech Stack
                         </h5>
                         <p className="dark:text-gray-200 text-sm">
@@ -136,8 +121,16 @@ const Hero = () => {
                       </div>
 
                       {/* Column 2: JustSay Tech */}
-                      <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-4 shadow-md dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:shadow-navyblue shadow-primary">
-                        <h5 className="dark:text-gray-200 font-semibold mb-2">
+                      <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-3 pt-0 shadow-md dark:bg-dark-lighter dark:border dark:border-dark-accent/30 dark:shadow-navyblue shadow-primary">
+                        <a
+                        href="https://justsay.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 flex justify-center dark:shadow-navyblue"
+                      >
+                        JustSay
+                      </a>
+                        <h5 className="dark:text-gray-200 font-semibold mt-2 mb-2">
                           Tech Stack
                         </h5>
                         <p className="dark:text-gray-200 text-sm">

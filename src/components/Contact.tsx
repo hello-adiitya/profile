@@ -195,7 +195,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="phone"
-                  className="block text-sm font-medium text-dark mb-2 dark:text-gray-300"
+                  className="block text-sm font-medium text-dark mb-2 dark:text-gray-300 "
                 >
                   Phone Number
                 </label>
@@ -235,7 +235,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className=" py-4 border-2 flex justify-center items-center border-midnight-300 text-prmary-600 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center w-full"
+                className=" py-4 border-2 flex justify-center items-center border-midnight-300 text-prmary-600 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all duration-300 dark:border-primary/50 dark:text-white dark:hover:border-primary dark:hover:shadow-glow dark:shadow-glow rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center w-full"
               >
                 Contact Me
               </button>
