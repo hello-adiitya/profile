@@ -103,7 +103,7 @@ const Contact = () => {
                 />
               </div> */}
               <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white shadow-xl 
-                dark:border-primary/20 dark:shadow-glow dark:hover:border-primary-400 group">
+                dark:border-primary/20 dark:shadow-glow dark:hover:border-primary-400">
   <img
     src="/profile.webp"
     alt="Aditya Gupta"
