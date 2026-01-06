@@ -6,7 +6,10 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import SidebarContact from "./components/SidebarContact";
+import WhatsappFloat from "./components/WhatsappFloat";
 import { Theme, applyTheme } from '@/utils/theme';
+
 
 function App() {
   const [theme, setTheme] = useState<Theme>('light');
@@ -24,6 +27,8 @@ function App() {
         <Skills />
         <Education />
         <Contact />
+        <SidebarContact />
+        <WhatsappFloat />
       </main>
       <Footer />
     </div>
